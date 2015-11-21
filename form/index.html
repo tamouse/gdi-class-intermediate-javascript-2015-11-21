@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>GDI - Intermediate JS - Form!</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- Include jQuery that's in the lib directory -->
+	<script src="../lib/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<form action="MAILTO:amy@gdiminneapolis.com" method="post" enctype="text/plain">
+
+	    <div class="form_group">
+	        <label for="name">Name</label>
+	        <input type="text" name="name" id="name" />
+	    </div>
+
+	    <hr />
+
+	    <div class="form_group">
+	        <input type="checkbox" name="like_libraries" id="like_libraries" class="no_indent" />
+	        <label for="like_libraries" class="checkbox_label">I like JavaScript libraries</label>
+	    </div>
+
+	    <div class="clear"></div>
+
+	    <div id="library_list">
+	        <div class="form_group">
+	            <input type="checkbox" name="jquery" id="jquery" />
+	            <label for="jquery" class="checkbox_label">jQuery</label>
+	            <input type="checkbox" name="jqueryui" id="jqueryui" />
+	            <label for="jqueryui" class="checkbox_label">jQuery UI</label>
+	        </div>
+	        <div class="form_group">
+	            <input type="checkbox" name="momentjs" id="momentjs" />
+	            <label for="momentjs" class="checkbox_label">MomentJS</label>
+	            <input type="checkbox" name="mootools" id="mootools" />
+	            <label for="mootools" class="checkbox_label">MooTools</label>
+	        </div>
+	        <div class="clear"></div>
+	    </div>
+
+	    <hr />
+
+	    <div class="form_group">
+	        <label for="gdi_course">The next Girl Develop It class I'm taking is</label>
+	        <br />
+	        <select id="gdi_course" name="gdi_course">
+	            <option value="wordpress">WordPress</option>
+	            <option value="git">Intro to Git</option>
+	            <option value="html_css">Intermediate HTML/CSS</option>
+	        </select>
+	    </div>
+
+	    <div class="hidden_gdi_course_content" id="wordpress">Saturday, July 25.</div>
+	    <div class="hidden_gdi_course_content" id="git">Tuesday, September 5.</div>
+	    <div class="hidden_gdi_course_content" id="html_css">Thursday, October 18.</div>
+
+	    <hr />
+
+	    <input type="submit" value="submit" />
+
+	</form>
+
+	<!-- The link to our scripts.js file in this form directory -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
