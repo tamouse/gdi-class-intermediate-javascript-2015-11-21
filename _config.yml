@@ -1,1 +1,5 @@
+title: "GDI Intermediate Javascript"
+email: "tamouse@gmail.com"
+description: "GDI Intermediate Javascript Class Project"
+baseurl: ''
 exclude: [README.md, bower.json, package.json, gulpfile.js, node_modules, bower_components, Gemfile, Gemfile.lock, LICENSE.txt]

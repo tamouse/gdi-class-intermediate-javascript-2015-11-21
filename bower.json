@@ -1,8 +1,23 @@
 {
-  "name" : "gdi-class-intermediate-javascript-2015-11-21",
+  "name": "gdi-class-intermediate-javascript-2015-11-21",
   "version": "0.0.0",
-  "authors": ["Tamara Temple"],
   "homepage": "https://github.com/tamouse/gdi-class-intermediate-javascript-2015-11-21",
+  "authors": [
+    "Tamara Temple <tamouse@gmail.com>"
+  ],
+  "description": "GDI Intermediate Javascript Class project",
+  "main": "gulpfile.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "javascript",
+    "class",
+    "GDI"
+  ],
+  "license": "MIT",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -11,7 +26,8 @@
     "tests"
   ],
   "dependencies": {
-    "fontawesome": "~4.3.0",
-    "normalize.scss": "~3.0.2"
+    "bootstrap-sass": "~3.3.5",
+    "font-awesome": "fontawesome#~4.4.0",
+    "moment": "~2.10.6"
   }
 }
