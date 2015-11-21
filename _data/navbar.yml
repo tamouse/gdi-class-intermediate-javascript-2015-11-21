@@ -1,0 +1,10 @@
+internal:
+- href: "/form/index.html"
+  name: "Form"
+
+external:
+- name: "Slides"
+  href: "http://amlyhamm.com/gdi/intermediate_javascript/#/"
+
+- name: "tamouse.org"
+  href: "http://www.tamouse.org"

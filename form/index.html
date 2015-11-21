@@ -1,72 +1,104 @@
-<!DOCTYPE html>
-<html>
-<head>
-	
-	<title>GDI - Intermediate JS - Form!</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+---
+layout: default
+title: "GDI - Intermediate JS - Form!"
+navbar: true
+---
 
-	<!-- Include jQuery that's in the lib directory -->
-	<script src="../lib/jquery.min.js"></script>
+<div class="container">
 
-</head>
-<body>
+    <section class="page-header">
+        <h2>{{ page.title }}</h2>
+    </section>
 
-	<form action="MAILTO:amy@gdiminneapolis.com" method="post" enctype="text/plain">
+    <section>
+        <form action="MAILTO:{{site.email}}" method="post" enctype="text/plain">
 
-	    <div class="form_group">
-	        <label for="name">Name</label>
-	        <input type="text" name="name" id="name" />
-	    </div>
+            <div class="form_group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control"/>
+            </div>
 
-	    <hr />
+            <hr/>
 
-	    <div class="form_group">
-	        <input type="checkbox" name="like_libraries" id="like_libraries" class="no_indent" />
-	        <label for="like_libraries" class="checkbox_label">I like JavaScript libraries</label>
-	    </div>
+            <div class="checkbox">
 
-	    <div class="clear"></div>
+                <label for="like_libraries" class="checkbox_label">
+                    <input type="checkbox" name="like_libraries" id="like_libraries" class="no_indent"/>
+                    I like JavaScript libraries
+                </label>
+            </div>
 
-	    <div id="library_list">
-	        <div class="form_group">
-	            <input type="checkbox" name="jquery" id="jquery" />
-	            <label for="jquery" class="checkbox_label">jQuery</label>
-	            <input type="checkbox" name="jqueryui" id="jqueryui" />
-	            <label for="jqueryui" class="checkbox_label">jQuery UI</label>
-	        </div>
-	        <div class="form_group">
-	            <input type="checkbox" name="momentjs" id="momentjs" />
-	            <label for="momentjs" class="checkbox_label">MomentJS</label>
-	            <input type="checkbox" name="mootools" id="mootools" />
-	            <label for="mootools" class="checkbox_label">MooTools</label>
-	        </div>
-	        <div class="clear"></div>
-	    </div>
+            <div class="clear"></div>
 
-	    <hr />
+            <div id="library_list" class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-offset-1 col-md-4">
+                        <div class="checkbox">
+                            <label for="jquery" class="checkbox_label">
+                                <input type="checkbox" name="jquery" id="jquery"/>
+                                jQuery
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="checkbox">
+                            <label for="jquery-ui" class="checkbox_label">
+                                <input type="checkbox" name="jquery-ui" id="jquery-ui"/>
+                                jQuery-UI
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-offset-1 col-md-4">
+                        <div class="checkbox">
+                            <label for="momentjs" class="checkbox_label">
+                                <input type="checkbox" name="momentjs" id="momentjs"/>
+                                MomentJS
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="checkbox">
+                            <label for="mootools" class="checkbox_label">
+                                <input type="checkbox" name="mootools" id="mootools"/>
+                                MooTools
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
 
-	    <div class="form_group">
-	        <label for="gdi_course">The next Girl Develop It class I'm taking is</label>
-	        <br />
-	        <select id="gdi_course" name="gdi_course">
-	            <option value="wordpress">WordPress</option>
-	            <option value="git">Intro to Git</option>
-	            <option value="html_css">Intermediate HTML/CSS</option>
-	        </select>
-	    </div>
+            <hr/>
 
-	    <div class="hidden_gdi_course_content" id="wordpress">Saturday, July 25.</div>
-	    <div class="hidden_gdi_course_content" id="git">Tuesday, September 5.</div>
-	    <div class="hidden_gdi_course_content" id="html_css">Thursday, October 18.</div>
+            <div class="form_group">
+                <label for="gdi_course">The next Girl Develop It class I'm taking is</label>
+                <br/>
+                <select id="gdi_course" name="gdi_course">
+                    <option value="wordpress">WordPress</option>
+                    <option value="git">Intro to Git</option>
+                    <option value="html_css">Intermediate HTML/CSS</option>
+                </select>
+            </div>
 
-	    <hr />
+            <div class="container hidden_gdi_course_content">
+                <div class="panel">
+                    <div class="panel-body">
+                        <div id="wordpress">Saturday, July 25.</div>
+                        <div id="git">Tuesday, September 5.</div>
+                        <div id="html_css">Thursday, October 18.</div>
+                    </div>
+                </div>
+            </div>
 
-	    <input type="submit" value="submit" />
 
-	</form>
+            <hr/>
 
-	<!-- The link to our scripts.js file in this form directory -->
-    <script src="scripts.js"></script>
+            <input class="btn btn-primary" type="submit" value="submit"/>
 
-</body>
-</html>
+        </form>
+    </section>
+</div>
+
+
