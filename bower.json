@@ -1,0 +1,17 @@
+{
+  "name" : "gdi-class-intermediate-javascript-2015-11-21",
+  "version": "0.0.0",
+  "authors": ["Tamara Temple"],
+  "homepage": "https://github.com/tamouse/gdi-class-intermediate-javascript-2015-11-21",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.3.0",
+    "normalize.scss": "~3.0.2"
+  }
+}

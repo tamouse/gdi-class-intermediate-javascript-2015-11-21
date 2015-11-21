@@ -1,0 +1,31 @@
+{
+  "name": "gdi-class-intermediate-javascript-2015-11-21",
+  "description": "GDI Intermediate Javascript Course project",
+  "version": "0.0.0",
+  "keywords": ["javascript", "GDI", "class"],
+  "homepage": "https://github.com/tamouse/gdi-class-intermediate-javascript-2015-11-21",
+  "bugs": {"url": "https://github.com/tamouse/gdi-class-intermediate-javascript-2015-11-21/issues" },
+  "license": "MIT",
+  "author": {
+    "name": "Tamara Temple",
+    "url": "http://www.tamouse.org",
+    "email": "tamouse@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tamouse/gdi-class-intermediate-javascript-2015-11-21"
+  },
+  "private": true,
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.7.12",
+    "gulp": "^3.9.0",
+    "gulp-bower": "0.0.10",
+    "gulp-compass": "^2.1.0",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-task-listing": "^1.0.1"
+  }
+}
